@@ -32,7 +32,7 @@ public class JobManager {
 	public Boolean addJob(Job job) {
 		Boolean b =  this.jobQueue.offer(job);
 		if(b) {
-			System.out.println("Job " + job.getName() + "insert success.");
+			System.out.println("Job " + job.getName() + " insert success.");
 		}else {
 			System.out.println("Job insert failed. May be queue is full. remainingCapacity:" + jobQueue.remainingCapacity());
 		}
